@@ -1,5 +1,13 @@
+.header {
+  width: 100%;
+}
+
 .main {
   margin: 0px 150px 0px 240px;
+}
+
+.sortby {
+  margin-right: 85px;
 }
 
 .sub-header {
@@ -7,9 +15,11 @@
   margin: 0px 0px 0px 0px;
   margin-top: 30px;
   margin-left: 275px;
-  display: flex;
-  justify-content: space-between;
+
   align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .sub-header select {
@@ -17,6 +27,20 @@
   outline: none;
 }
 
+.totalitems {
+  margin-left: -800px;
+}
+
 .sub-header select option {
   border: none;
+}
+
+@media (max-width: 1300px) {
+  .totalitems {
+    display: none;
+  }
+
+  .sortby {
+    margin-right: 205px;
+  }
 }

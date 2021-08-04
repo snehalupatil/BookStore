@@ -61,6 +61,7 @@ export class HomeComponent implements OnInit {
     }
     this.bookService.addCart(data, this.token_Id).subscribe((response:any) => {
       console.log(response)
+      // Add data service
 
     
     },(error)=>{

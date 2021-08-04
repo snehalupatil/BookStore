@@ -1,7 +1,7 @@
 <div class="header">
   <app-header></app-header>
 </div>
-<h3 style="margin-top: 10px; margin-left: 400px">Home/My Carts</h3>
+<h3 class="route">Home/My Carts</h3>
 <mat-accordion>
   <div>
     <mat-expansion-panel
@@ -72,7 +72,7 @@
           >Customer Details</mat-panel-title
         >
       </mat-expansion-panel-header>
-      <div style="margin-left: 550px">
+      <div class="newAdress" style="margin-left: 550px">
         <span style="color: #a03037; padding: 20px 0px 20px 19px"
           >Add New Address</span
         >
@@ -114,13 +114,10 @@
             </mat-form-field>
           </div>
           <div>
-            <h3 style="margin-top: 10px; margin-left: -570px" class="textName">
+            <h3 class="typeradio" style="margin-left: -370px" class="textName">
               Type
             </h3>
-            <mat-radio-group
-              style="margin-left: -200px"
-              formControlName="addressType"
-            >
+            <mat-radio-group class="radiotype" formControlName="addressType">
               <mat-radio-button class="example-margin" value="Home"
                 >Home</mat-radio-button
               >

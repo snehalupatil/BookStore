@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
   token_Id = localStorage.getItem('token');
 
   ngOnInit(): void {
-    // this.bookService.getRefreshedData().subscribe((data:any) =>this.getCartItems());
+    this.bookService.getRefreshedData().subscribe((data:any) =>this.getCartItems());
     this.getCartItems();
   }
 

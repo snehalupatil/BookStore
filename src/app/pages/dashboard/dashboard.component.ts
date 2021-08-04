@@ -29,10 +29,11 @@ export class DashboardComponent implements OnInit {
 
 
   sortBy = ( sortByIn:string ) => {
-    if (sortByIn == "p") {
+
+    if (sortByIn == "ASC") {
       this.sort="Price(Low-High)";
       this.books.sort((a: any, b: any) => (a.price) - (b.price));
-    } else if (sortByIn == "phl") {
+    } else if (sortByIn == "DSC") {
       this.sort="Price(High-Low)";
       this.books.sort((a: any, b: any) => (b.price) - (a.price));
     }
